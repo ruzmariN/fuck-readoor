@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readoor-brush"
+version = "1.0.0"
+description = "教材出版服务平台（readoor）学习进度批处理工具"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = ["cryptography>=41.0.0"]
+
+[project.scripts]
+readoor-brush = "readoor.cli:main"
+
+[tool.setuptools]
+packages = ["readoor"]
